@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Bank",
+      "projection": "BankL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Customer",
+      "projection": "CustomerL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Account",
+      "projection": "AccountL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Debit  card",
+  "name": "IISFindErrorDebitCardE",
+  "className": "DebitCardE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-debit-card",
+      "modelProjection": "DebitCardE"
+    }
+  ]
+}

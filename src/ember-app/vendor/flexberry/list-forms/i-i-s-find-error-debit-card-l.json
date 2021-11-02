@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-debit-card-e",
+  "editForm": "i-i-s-find-error-debit-card-e",
+  "external": false,
+  "caption": "Debit  card",
+  "name": "IISFindErrorDebitCardL",
+  "className": "DebitCardL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-debit-card",
+      "modelProjection": "DebitCardL"
+    }
+  ]
+}

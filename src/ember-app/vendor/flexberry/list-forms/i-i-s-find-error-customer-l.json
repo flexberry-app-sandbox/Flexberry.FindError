@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-customer-e",
+  "editForm": "i-i-s-find-error-customer-e",
+  "external": false,
+  "caption": "Customer",
+  "name": "IISFindErrorCustomerL",
+  "className": "CustomerL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-customer",
+      "modelProjection": "CustomerL"
+    }
+  ]
+}

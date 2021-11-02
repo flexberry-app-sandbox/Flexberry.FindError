@@ -1,0 +1,93 @@
+<h3 class="ui header">{{t "forms.i-i-s-find-error-a-t-m-transaction-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.transactionId
+      class=(if (v-get validationModel "transactionId" "isInvalid") "error")
+      label=(t "forms.i-i-s-find-error-a-t-m-transaction-e.transactionId-caption")
+      data-test-i-i-s-find-error-a-t-m-transaction-e-transactionId=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "transactionId" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.transactionDate
+      class=(if (v-get validationModel "transactionDate" "isInvalid") "error")
+      label=(t "forms.i-i-s-find-error-a-t-m-transaction-e.transactionDate-caption")
+      data-test-i-i-s-find-error-a-t-m-transaction-e-transactionDate=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "transactionDate" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.amount
+      class=(if (v-get validationModel "amount" "isInvalid") "error")
+      label=(t "forms.i-i-s-find-error-a-t-m-transaction-e.amount-caption")
+      data-test-i-i-s-find-error-a-t-m-transaction-e-amount=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "amount" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-find-error-a-t-m-transaction-e.account-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.account
+      displayAttributeName="accountType"
+      autocomplete=true
+      relationName="account"
+      projection="AccountL"
+      title=(t "forms.i-i-s-find-error-a-t-m-transaction-e.account-caption")
+      readonly=readonly
+      componentName="accountLookup"
+      class=(if (v-get validationModel "account" "isInvalid") "error")
+      data-test-i-i-s-find-error-a-t-m-transaction-e-account=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "account" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-find-error-a-t-m-transaction-e.aTM-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.aTM
+      displayAttributeName="adress"
+      autocomplete=true
+      relationName="aTM"
+      projection="ATML"
+      title=(t "forms.i-i-s-find-error-a-t-m-transaction-e.aTM-caption")
+      readonly=readonly
+      componentName="aTMLookup"
+      class=(if (v-get validationModel "aTM" "isInvalid") "error")
+      data-test-i-i-s-find-error-a-t-m-transaction-e-aTM=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "aTM" "message")}}
+  </div>
+</form>

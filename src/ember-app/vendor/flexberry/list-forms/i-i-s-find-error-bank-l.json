@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-bank-e",
+  "editForm": "i-i-s-find-error-bank-e",
+  "external": false,
+  "caption": "Bank",
+  "name": "IISFindErrorBankL",
+  "className": "BankL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-bank",
+      "modelProjection": "BankL"
+    }
+  ]
+}

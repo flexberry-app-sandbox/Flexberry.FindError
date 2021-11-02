@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Account",
+      "projection": "AccountL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ATM",
+      "projection": "ATML",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "A t m  transaction",
+  "name": "IISFindErrorATMTransactionE",
+  "className": "ATMTransactionE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-a-t-m-transaction",
+      "modelProjection": "ATMTransactionE"
+    }
+  ]
+}

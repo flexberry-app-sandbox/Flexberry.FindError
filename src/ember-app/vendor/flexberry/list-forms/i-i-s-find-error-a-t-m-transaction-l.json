@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-a-t-m-transaction-e",
+  "editForm": "i-i-s-find-error-a-t-m-transaction-e",
+  "external": false,
+  "caption": "A t m  transaction",
+  "name": "IISFindErrorATMTransactionL",
+  "className": "ATMTransactionL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-a-t-m-transaction",
+      "modelProjection": "ATMTransactionL"
+    }
+  ]
+}

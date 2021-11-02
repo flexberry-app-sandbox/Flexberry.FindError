@@ -1,0 +1,113 @@
+﻿{
+  "name": "IISFindErrorCustomer",
+  "modelName": "i-i-s-find-error-customer",
+  "className": "Customer",
+  "nameSpace": "IIS.FindError",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "bank",
+      "relatedTo": "i-i-s-find-error-bank",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "account",
+      "relatedTo": "i-i-s-find-error-account",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CustomerE",
+      "modelName": "i-i-s-find-error-customer",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "AccountType",
+          "lookupValueField": "accountType",
+          "relationName": "Account",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "accountType",
+              "caption": "Account type",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Account",
+          "name": "account",
+          "relatedTo": "i-i-s-find-error-account",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "CustomerL",
+      "modelName": "i-i-s-find-error-customer",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Account",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "accountType",
+              "caption": "Account type",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Account type",
+          "name": "account",
+          "relatedTo": "i-i-s-find-error-account",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

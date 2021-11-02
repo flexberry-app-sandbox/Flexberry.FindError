@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Account",
+  "name": "IISFindErrorAccountE",
+  "className": "AccountE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-account",
+      "modelProjection": "AccountE"
+    }
+  ]
+}

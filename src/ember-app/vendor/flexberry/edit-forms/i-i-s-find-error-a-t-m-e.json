@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Bank",
+      "projection": "BankL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "ATM",
+  "name": "IISFindErrorATME",
+  "className": "ATME",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-a-t-m",
+      "modelProjection": "ATME"
+    }
+  ]
+}

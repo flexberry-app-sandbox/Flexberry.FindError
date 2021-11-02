@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-a-t-m-e",
+  "editForm": "i-i-s-find-error-a-t-m-e",
+  "external": false,
+  "caption": "ATM",
+  "name": "IISFindErrorATML",
+  "className": "ATML",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-a-t-m",
+      "modelProjection": "ATML"
+    }
+  ]
+}

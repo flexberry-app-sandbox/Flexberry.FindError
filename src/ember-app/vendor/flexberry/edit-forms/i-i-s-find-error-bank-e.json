@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Bank",
+  "name": "IISFindErrorBankE",
+  "className": "BankE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-bank",
+      "modelProjection": "BankE"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "A t m_ MACHINE",
+  "applicationTitle": "A t m_ MACHINE",
+  "items": [
+    {
+      "link": null,
+      "menuName": "a-t-m-m-a-c-h-i-n-e",
+      "caption": "ATM_MACHINE",
+      "title": "ATM_MACHINE",
+      "children": [
+        {
+          "link": "i-i-s-find-error-a-t-m-l",
+          "menuName": null,
+          "caption": "ATM",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-find-error-debit-card-l",
+          "menuName": null,
+          "caption": "DebitCard",
+          "title": "Debit  card",
+          "children": null
+        },
+        {
+          "link": "i-i-s-find-error-customer-l",
+          "menuName": null,
+          "caption": "Customer",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-find-error-bank-l",
+          "menuName": null,
+          "caption": "Bank",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-find-error-account-l",
+          "menuName": null,
+          "caption": "Account",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-find-error-a-t-m-transaction-l",
+          "menuName": null,
+          "caption": "ATMTransaction",
+          "title": "A t m  transaction",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

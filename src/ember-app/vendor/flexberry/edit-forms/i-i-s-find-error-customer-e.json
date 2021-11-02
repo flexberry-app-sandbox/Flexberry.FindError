@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Account",
+      "projection": "AccountL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Customer",
+  "name": "IISFindErrorCustomerE",
+  "className": "CustomerE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-customer",
+      "modelProjection": "CustomerE"
+    }
+  ]
+}

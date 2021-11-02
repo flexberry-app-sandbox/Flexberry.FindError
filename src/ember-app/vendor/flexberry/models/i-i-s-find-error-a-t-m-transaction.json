@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISFindErrorATMTransaction",
+  "modelName": "i-i-s-find-error-a-t-m-transaction",
+  "className": "ATMTransaction",
+  "nameSpace": "IIS.FindError",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "transactionId",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "transactionDate",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "aTM",
+      "relatedTo": "i-i-s-find-error-a-t-m",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "account",
+      "relatedTo": "i-i-s-find-error-account",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ATMTransactionE",
+      "modelName": "i-i-s-find-error-a-t-m-transaction",
+      "attrs": [
+        {
+          "name": "transactionId",
+          "caption": "Transaction id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "transactionDate",
+          "caption": "Transaction date",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "amount",
+          "caption": "Amount",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "AccountType",
+          "lookupValueField": "accountType",
+          "relationName": "Account",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "accountType",
+              "caption": "Account type",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Account",
+          "name": "account",
+          "relatedTo": "i-i-s-find-error-account",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Adress",
+          "lookupValueField": "adress",
+          "relationName": "ATM",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "adress",
+              "caption": "Adress",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "ATM",
+          "name": "aTM",
+          "relatedTo": "i-i-s-find-error-a-t-m",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ATMTransactionL",
+      "modelName": "i-i-s-find-error-a-t-m-transaction",
+      "attrs": [
+        {
+          "name": "transactionId",
+          "caption": "Transaction id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "transactionDate",
+          "caption": "Transaction date",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "amount",
+          "caption": "Amount",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Account",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "accountType",
+              "caption": "Account type",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Account type",
+          "name": "account",
+          "relatedTo": "i-i-s-find-error-account",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ATM",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "adress",
+              "caption": "Adress",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Adress",
+          "name": "aTM",
+          "relatedTo": "i-i-s-find-error-a-t-m",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

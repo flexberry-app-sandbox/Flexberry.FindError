@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-find-error-account-e",
+  "editForm": "i-i-s-find-error-account-e",
+  "external": false,
+  "caption": "Account",
+  "name": "IISFindErrorAccountL",
+  "className": "AccountL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-find-error-account",
+      "modelProjection": "AccountL"
+    }
+  ]
+}
